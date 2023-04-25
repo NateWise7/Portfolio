@@ -4,7 +4,7 @@ function MatrixEffect( { str, num }) {
 const [ effectItems, setEffectItems ] = useState('')
 
 
-  const setEffectStateFunction = () => { 
+  const setRandomState = () => { 
     let newState = '';
     for (let i=0;i<str.length; i++ ) {
       const random = getRandomChar();
@@ -19,19 +19,18 @@ const [ effectItems, setEffectItems ] = useState('')
     return chars[num]
   }
 
+  let numberz = useRef(0);
+  let start = useRef(0);
 
-  let startNumOfLoops = 0;
-  let numOfLoops = 10 + num;
-
-  const firstLoop = (functionParam) => {
+  const Loop = (functionParam, setTheNumber) => {
     setTimeout(() => {
       functionParam();
-      startNumOfLoops++;
-      if (startNumOfLoops < numOfLoops) {
-        firstLoop(setEffectStateFunction);
-      } else {
-        firstLoop(setStateback)
-      } 
+      setTheNumber.current++;
+      if (start.current < num) {
+        Loop(setRandomState, start);
+      } else if (numberz.current < str.length) {
+          Loop(setStateback, numberz)
+      }
     }, 100)
   }
 
@@ -59,7 +58,7 @@ const [ effectItems, setEffectItems ] = useState('')
   
   useEffect (() => {
     if (pageLoaded.current === false) {
-        firstLoop(setEffectStateFunction, );
+        Loop(setRandomState, start);
       pageLoaded.current = true
     } else if (pageLoaded === true)
         filler(1, 1)

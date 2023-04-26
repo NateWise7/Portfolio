@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 
-function MatrixEffect( { str, num }) {
+function MatrixEffect({ str, num }) {
 const [ effectItems, setEffectItems ] = useState('')
 
 

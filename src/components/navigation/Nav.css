@@ -1,4 +1,25 @@
 
+.nav {
+  height: 250px;
+  position: fixed;
+  background: linear-gradient(to bottom, rgb(238,238,238), rgba(238,238,238), transparent);}
+
+.navContainer {
+  height: 120px;
+  border-bottom: 3px solid black;
+  border-radius: 9%;
+}
+
+.button {
+  transition: 100ms;
+}
+
+.button:hover {
+  transition: 100ms;
+  transform: scale(1.2);
+  font-size: 120%;
+}
+
 .dropdown {
     position: relative;
     flex: inline-block;

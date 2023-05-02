@@ -35,22 +35,23 @@ function Nav() {
         </div>
       </nav>
       ) : (
-      <nav className="w-full h-200px flex justify-center font-mono text-xl">
-        <div className="back inline-flex cursor-pointer ">
-          <a href="#Home" className="p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
-            <MatrixEffect str='/Home' num={10} />
+      <nav className="nav w-full flex justify-center font-mono text-xl">
+        <div className="navContainer inline-flex cursor-pointer ">
+          <a href="#Home" className="button p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
+            <MatrixEffect str='<Home>' num={10} />
           </a>
-          <a href="#About" className="p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
-            <MatrixEffect str='/About' num={15} />
+          <a href="#About" className="button p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
+            <MatrixEffect str='<About>' num={15} />
           </a>
-          <a href="#Projects" className="p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
-            <MatrixEffect str='/Projects' num={21} />
+          <a href="#Projects" className="button p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
+            <MatrixEffect str='<Projects>' num={21} />
           </a>
-          <a href="#Contact" className="p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
-            <MatrixEffect str='/Contact' num={30} />
+          <a href="#Contact" className="button p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
+            <MatrixEffect str='<Contact>' num={30} />
             </a>
         </div>
         </nav>
+
       )}
       </>
     );

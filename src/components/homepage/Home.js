@@ -4,7 +4,14 @@ import './home.css';
 
 function Home() {
     return (
-        <h1 className="text-9xl w-full home flex justify-center font-mono mt-32">
+        <h1 className="
+        text-9xl 
+        w-full home 
+        flex 
+        justify-center 
+        font-mono 
+        mt-32"
+        >
                     <Typewriter
                         onInit={(typewriter) => {
                         typewriter

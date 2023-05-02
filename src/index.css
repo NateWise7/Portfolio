@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body, html {
-    background-color: #eeeeee;
     height: 100%;
     width: 100%;
+
 }

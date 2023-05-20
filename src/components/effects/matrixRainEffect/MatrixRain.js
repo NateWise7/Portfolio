@@ -2,9 +2,11 @@ import { useRef } from 'react';
 import RainStream from "./RainStream";
 import "./matrixRain.css"; 
 
+
+
 const MatrixRain = () => {
     let keys = useRef(0)
-    const streamCount = Math.floor(window.innerWidth / 26)
+    const streamCount = Math.floor(((window.innerWidth - 1000) / 2) / 26)
     return (
         <div className="rain">
             {new Array(streamCount).fill().map(_ => {

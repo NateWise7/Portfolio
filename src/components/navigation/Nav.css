@@ -6,8 +6,8 @@
 
 .navContainer {
   height: 120px;
-  border-bottom: 3px solid black;
-  border-radius: 9%;
+  width: 840px;
+  border-bottom: 2px solid black;
 }
 
 .button {

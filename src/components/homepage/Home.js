@@ -10,7 +10,9 @@ function Home() {
         flex 
         justify-center 
         font-mono 
-        mt-32"
+        mt-32
+        pt-32
+        "
         >
                     <Typewriter
                         onInit={(typewriter) => {

@@ -4,6 +4,7 @@ import MatrixEffect from "../effects/MatrixEffect";
 
 
 function Nav() {
+
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -36,7 +37,7 @@ function Nav() {
       </nav>
       ) : (
       <nav className="nav w-full flex justify-center font-mono text-xl">
-        <div className="navContainer inline-flex cursor-pointer ">
+        <div className="nav-width navContainer inline-flex cursor-pointer ">
           <a href="#Home" className="button p-5 lg:m-10 md:mx-5 md:my-10 sm:mx-1 sm:my-10 sm:text-sm md:text-xl">
             <MatrixEffect str='<Home>' num={10} />
           </a>
